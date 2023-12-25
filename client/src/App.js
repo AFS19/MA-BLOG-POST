@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import Write from "./pages/Write";
 import Single from "./pages/Single";
 import Main from "./Layouts/Main";
+import "./main.scss";
 
 const router = createBrowserRouter([
   {
