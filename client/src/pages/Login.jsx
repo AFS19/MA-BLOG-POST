@@ -5,8 +5,8 @@ export default function Login() {
     <div className="auth">
       <h1>Login</h1>
       <form action="">
-        <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" placeholder="password" />
+        <input type="text" required id="username" placeholder="username" />
+        <input type="password" required id="password" placeholder="password" />
         <button>Login</button>
         <p className="error">This is an error!</p>
         <span>
