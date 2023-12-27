@@ -1,8 +1,22 @@
 $lightgreen: #b9e7e7;
 
-.app {
-  .container {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.app {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1024px;
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase;
+    }
+    
     // Login & register pages
     .auth {
       display: flex;
@@ -25,13 +39,13 @@ $lightgreen: #b9e7e7;
       width: 200px;
       gap: 20px;
 
-      input: {
+      input {
         padding: 10px;
         border: none;
         border-bottom: 1px solid gray;
       }
 
-      button: {
+      button {
         padding: 10px;
         border: none;
         background-color: teal;
@@ -48,6 +62,54 @@ $lightgreen: #b9e7e7;
       span {
         font-style: 12px;
         text-align: center;
+      }
+    }
+
+    // Navbar
+    .navbar{
+      .container{
+        padding: 10px 0;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+          img {
+            width: 80px;
+          }
+        }
+        .links{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          h6 {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1.1px
+          }
+
+          span {
+            cursor: pointer;
+          }
+
+          .write {
+            background-color: $lightgreen;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            border: 1px solid white;
+            &:hover {
+              color:teal;
+              background-color: white;
+              border: 1px solid teal;
+            }
+          }
+        
+        }
       }
     }
   }
