@@ -18,7 +18,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="copyright">mablog © 2023 • Publié avec m.afs</div>
+        <div className="copyright">mablog © 2023 • Published with m.afs</div>
       </div>
     </footer>
   );
