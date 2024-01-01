@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import Menu from "../components/Menu";
+import Menu from "../components/Menu";
 
 export default function Single() {
   return (
@@ -73,7 +73,7 @@ export default function Single() {
       </div>
 
       {/* Menu */}
-      {/* <Menu /> */}
+      <Menu />
     </div>
   );
 }
