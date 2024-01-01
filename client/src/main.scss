@@ -222,5 +222,45 @@ $lightgreen: #b9e7e7;
         }
       }
     }
+
+    // Single
+    .single {
+      display: flex;
+      gap: 50px;
+      .content {
+        flex: 5;
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 14px;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .info {
+            display: flex;
+            gap: 10px;
+            span {
+              font-weight: bold;
+            }
+            p {
+              font-size: x-small;
+              color: gray;
+            }
+          }
+        }
+      }
+      .menu {
+        flex: 2;
+      }
+    }
   }
 }
