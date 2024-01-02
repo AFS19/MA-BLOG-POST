@@ -4,6 +4,7 @@ $lightgreen: #b9e7e7;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden;
 }
 
 .app {
@@ -325,6 +326,26 @@ $lightgreen: #b9e7e7;
             }
           }
         }
+      }
+    }
+
+    // Write
+    .write-container {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      
+      .content {
+        flex: 5;
+        background-color: seagreen;
+      }
+      .menu {
+        background-color: blueviolet;
+        flex: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .item {}
       }
     }
   }
