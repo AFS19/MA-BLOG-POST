@@ -337,15 +337,97 @@ $lightgreen: #b9e7e7;
       
       .content {
         flex: 5;
-        background-color: seagreen;
-      }
-      .menu {
-        background-color: blueviolet;
-        flex: 2px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .item {}
+
+        input {
+          padding: 10px;
+          border: 1px solid lightgray;
+          outline: none;
+        }
+        
+        .editorContainer {
+          height: 300px;
+          overflow: scroll;
+
+          .editor {
+            height: 100%;
+            border: none;
+            border: 1px solid lightgray;
+          }
+        }
+      }
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .item {
+          border: 1px solid lightgray;
+          padding: 10px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          color: #555;
+
+          h1 {
+            font-size: 20px;
+          }
+
+          input[type=file] {
+            display: none;
+          } 
+
+          .upload_file {
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 5px;
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+              border: 1px solid teal;
+              border-radius: 2px;
+              padding: 4px 5px;
+              cursor: pointer;
+            }
+            
+            :first-child {
+              color: teal;
+              background-color: white;
+            }
+            :last-child {
+              color: white;
+              background-color: teal;
+            }
+          }
+          .note {
+            padding: 10px;
+            font-style: 12px;
+            color: gray;
+            text-decoration: underline;
+          }
+
+          .category {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: teal;
+            font-weight: 500;
+            letter-spacing: 1.1px;
+            
+
+            input,label {
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }
