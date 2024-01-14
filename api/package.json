@@ -1,0 +1,11 @@
+{
+  "name": "mablog post API",
+  "version": "1.0.0",
+  "description": "welcome everyone, here where define all api functionality for our project for out blog post project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "m.afs",
+  "license": "ISC"
+}
