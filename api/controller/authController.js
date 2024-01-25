@@ -12,3 +12,11 @@ export const login = (req, res) => {
     },
   ]);
 };
+
+export const logout = (req, res) => {
+  res.json([
+    (data) => {
+      "logout method from auth controller";
+    },
+  ]);
+};

@@ -1,8 +1,7 @@
 import express from "express";
 const router = express.Router();
+import index from "../controller/postController.js";
 
-router.get("/", (req, res) => {
-  res.json([{ data: "all posts" }]);
-});
+router.get("/", index);
 
 export default router;
