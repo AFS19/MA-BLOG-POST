@@ -1,4 +1,4 @@
-import db from "../db/db.js";
+import {db} from "../db/db.js";
 import bcrypt from "bcryptjs";
 
 export const register = (req, res) => {

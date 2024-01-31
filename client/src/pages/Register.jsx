@@ -16,7 +16,12 @@ export default function Register() {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post()
+    try {
+      const res = await axios.post(`/auth/register`, inputs);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
   }
   return (
     <div className="auth">
